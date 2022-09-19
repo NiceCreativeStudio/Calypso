@@ -1,0 +1,533 @@
+@font-face {
+    font-family: 'Camaroon';
+    src: url('./assets/fonts/CamaroonMegalord.otf');
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+ul{
+    list-style-type: none;
+}
+
+label {
+    position: relative;
+}
+
+label:before {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    top: 0.2rem;
+    bottom: 0;
+    width: 20px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+input{
+    background: none;
+    border: none;
+    border-bottom: 1.3px solid #E3E1D5;
+    height: 2.8rem;
+    padding: 0 3rem;
+}
+
+.btn__light{
+    border: none;
+    background-color: #E3E1D5;
+    padding: 1rem 2.5rem;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+header{
+    text-transform: uppercase;
+    
+    color: #E3E1D5;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    padding: 0 2%;
+    background-color: #FBFAF6;
+
+    position: absolute;
+    width: 96%;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    margin: auto 1rem;
+}
+
+.nav__center--logo{
+    position: absolute;
+    left: 50%;
+    top: 1rem;
+    transform: translate(-50%, 0);
+}
+
+
+/* Hero */
+
+.hero__container{
+    height: 100vh;
+    background-image: url('https://ik.imagekit.io/nicecreativestudio/Calypso/hero_iQbhQZrep.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662995496941');
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero__container h1{
+    font-family: 'Camaroon', sans-serif;
+    font-weight: 100;
+    font-size: 13rem;
+}
+.hero__container h2{
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+
+.subHero__container{
+    display: flex;
+    height: 90vh;
+
+}
+
+.subHero__container .left{
+    background-image: url('https://ik.imagekit.io/nicecreativestudio/Calypso/ss_22_zh0k_VcnR.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662995495285');
+    width: 50%;
+
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subHero__container .left h3{
+    font-family: 'Camaroon', sans-serif;
+    font-weight: 100;
+    font-size: 13rem;
+}
+
+.subHero__container .left button{
+    position: absolute;
+    bottom: -85%;
+}
+
+
+.subHero__container .right{
+    background-image: url('https://ik.imagekit.io/nicecreativestudio/Calypso/set1_XnoA6a_UH.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662995495882');
+    width: 50%;
+
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Module 1 */
+.module1__container {
+    display: grid; 
+    grid-template-columns: 25% 25% 25% 25%; 
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: 
+        "a1 a1 a2 a3"
+        "b1 b2 b3 b3"
+    ; 
+}
+
+.module1__container .module__product{
+    height: 35rem;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+}
+.module1__container .module__product h4{
+    font-family: 'Camaroon', sans-serif;
+    font-weight: 100;
+    font-size: 3.5rem;
+
+    margin: auto auto 0 10%;
+}
+
+.module1__container .module__product p{
+    text-transform: uppercase;
+
+    margin: 0 auto 5% 10%;
+
+}
+
+.module1__container .module__quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.module1__container .a1 { 
+    grid-area: a1; 
+}
+
+.module1__container .a2 { 
+    grid-area: a2; 
+    background-image: url('https://ik.imagekit.io/nicecreativestudio/Calypso/ring_WZPHXvJNK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662995491180');
+}
+
+.module1__container .a3 { 
+    grid-area: a3; 
+    background-image: url('https://ik.imagekit.io/nicecreativestudio/Calypso/basics_KTnFaZ9P6.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662995490612');
+}
+
+.module1__container .b1 { 
+    grid-area: b1; 
+    background-image: url('https://ik.imagekit.io/nicecreativestudio/Calypso/zodiac_5Zc75FZVD.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662995490621');
+}
+
+.module1__container .b2 { 
+    grid-area: b2; 
+    background-image: url('https://ik.imagekit.io/nicecreativestudio/Calypso/earrings_KJuowzlkA.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662995489755');
+}
+
+.module1__container .b3 { 
+    grid-area: b3; 
+}
+
+
+
+
+
+/* Find a store */
+
+.find__container{
+    height: 50rem;
+    background-color: #333230;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.find__container h2{
+    font-family: 'Camaroon', sans-serif;
+    font-weight: 100;
+    font-size: 15rem;
+    color: #E3E1D5;
+}
+
+
+/* ========================== Location container ========================== */
+
+.location__container{
+    display: flex;
+    height: 100vh;
+}
+
+.location__container .location__left{
+    width: 50%;
+    background-image: url('https://ik.imagekit.io/nicecreativestudio/Calypso/showcase_cP36ARoIo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662995494272');
+    background-position: center;
+    background-size: cover;
+}
+
+.location__container .location__right{
+    width: 50%;
+    background-color: #FBFAF6;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.location__right--line{
+    width: 95%;
+    color: #CBBFAF;
+    margin-left: auto;
+}
+
+/* ARTICLE 1 */
+.location__right--mod1 {
+    display: grid; 
+    grid-template-columns: 30% 30%; 
+    grid-template-rows: 3rem min-content min-content min-content; 
+    grid-template-areas: 
+        "title1 ..."
+        "location1 hours1"
+        "phone1 hours1"
+        "view1 ..."
+    ; 
+    padding: 3rem;
+}
+.location__right--mod1 .title1 { 
+    grid-area: title1; 
+}
+.location__right--mod1 .location1 { 
+    grid-area: location1; 
+}
+.location__right--mod1 .phone1 { 
+    grid-area: phone1; 
+}
+.location__right--mod1 .hours1 { 
+    grid-area: hours1; 
+}
+.location__right--mod1 .view1 { 
+    grid-area: view1; 
+}
+
+
+/* ARTICLE 2 */
+.location__right--mod2 {
+    display: grid; 
+    grid-template-columns: 30% 30%; 
+    grid-template-rows: 3rem min-content min-content min-content; 
+    grid-template-areas: 
+        "title2 ..."
+        "location2 hours2"
+        "phone2 hours2"
+        "view2 ..."
+    ; 
+    padding: 3rem;
+}
+.location__right--mod2 .title2 { 
+    grid-area: title2; 
+}
+.location__right--mod2 .location2 { 
+    grid-area: location2; 
+}
+.location__right--mod2 .phone2 { 
+    grid-area: phone2; 
+}
+.location__right--mod2 .hours2 { 
+    grid-area: hours2; 
+}
+.location__right--mod2 .view2 { 
+    grid-area: view2; 
+}
+
+
+/* ARTICLE 3 */
+.location__right--mod3 {
+    display: grid; 
+    grid-template-columns: 30% 30%; 
+    grid-template-rows: 3rem min-content min-content min-content; 
+    grid-template-areas: 
+        "title3 ..."
+        "location3 hours3"
+        "phone3 hours3"
+        "view3 ..."
+    ; 
+    padding: 3rem;
+}
+.location__right--mod3 .title3 { 
+    grid-area: title3; 
+}
+.location__right--mod3 .location3 { 
+    grid-area: location3; 
+}
+.location__right--mod3 .phone3 { 
+    grid-area: phone3; 
+}
+.location__right--mod3 .hours3 { 
+    grid-area: hours3; 
+}
+.location__right--mod3 .view3 { 
+    grid-area: view3; 
+}
+
+
+/* ========================== Commitments ========================== */
+
+.commitments__container{
+    height: 70vh;
+    background-color: #F3ECE2;
+
+    display: flex;
+}
+
+.commitments__container .commitments__left{
+    width: 50%;
+    padding: 10%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.commitments__container .commitments__right{
+    width: 50%;
+    padding: 10%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.commitments__right--line{
+    color: #DED9C6;
+}
+
+
+
+/* ========================== Module 2 ========================== */
+
+.module2__container {
+    display: grid; 
+    grid-template-columns: 25% 25% 25% 25%; 
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: 
+        "c1 c1 c2 c3"
+        "d1 d2 d3 d3"
+    ; 
+}
+
+.module2__container .module__product{
+    height: 35rem;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+}
+.module2__container .module__product h4{
+    font-family: 'Camaroon', sans-serif;
+    font-weight: 100;
+    font-size: 3.5rem;
+
+    margin: auto auto 0 10%;
+}
+
+.module2__container .module__product p{
+    text-transform: uppercase;
+
+    margin: 0 auto 5% 10%;
+
+}
+
+.module2__container .module__quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.module2__container .c1 { 
+    grid-area: c1; 
+}
+
+.module2__container .c2 { 
+    grid-area: c2; 
+    background-image: url('https://ik.imagekit.io/nicecreativestudio/Calypso/neck_5keBrgwXb.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662995492728');
+}
+
+.module2__container .c3 { 
+    grid-area: c3; 
+    background-image: url('https://ik.imagekit.io/nicecreativestudio/Calypso/necklaces_Hei2U_kiq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662995491274');
+}
+
+.module2__container .d1 { 
+    grid-area: d1; 
+    background-image: url('https://ik.imagekit.io/nicecreativestudio/Calypso/final_earrings_1_H0TrpCRKAu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662995491303');
+}
+
+.module2__container .d2 { 
+    grid-area: d2; 
+    background-image: url('https://ik.imagekit.io/nicecreativestudio/Calypso/final_earrings_2_lkRzGn46FP.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662995490942');
+}
+
+.module2__container .d3 { 
+    grid-area: d3; 
+}
+
+
+
+
+
+/* ========================== Discount container ========================== */
+.discount__container{
+    height: 50vh;
+    padding: 0 20%;
+    background-color: #F3ECE2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.discount__container h3{
+    font-size: 4rem;
+    font-weight: 200;
+}
+
+
+/* ========================== FOOTER ========================== */
+footer{
+    color: #FBFAF6;
+    background-color: #000000;
+    height: 25vh;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+footer section{
+    display: flex;
+
+    margin-left: 3%;
+}
+
+footer section div{
+    margin: 3rem 2rem;
+    font-weight: 100;
+}
+
+footer section div h5{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+footer section div p{
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+}
+
+
+
+.footer__logo{
+    margin: auto 3% auto auto
+}
