@@ -4,8 +4,7 @@
     font-display: swap;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,600;1,700&display=swap');
 
 *{
     margin: 0;
@@ -54,9 +53,33 @@ input{
     background-color: #E3E1D5;
     padding: 1rem 2.5rem;
     text-transform: uppercase;
+    transition: .2s ease all;
+}
+.btn__light:hover{
+    background: none;
+    color: #E3E1D5;
+    border: 1px solid #E3E1D5;
 }
 
+.btn__dark{
+    border: none;
+    color: #E3E1D5;
+    background-color: #161107;
+    padding: 1rem 2.5rem;
+    text-transform: uppercase;
+    transition: .2s ease all;
+}
+.btn__dark:hover{
+    background: none;
+    color: #161107;
+    border: 1px solid #161107;
+}
 
+.boldIt{
+    font-weight: 700;
+    font-style: italic;
+    margin: 0 0.5rem;
+}
 
 
 
@@ -112,7 +135,7 @@ nav ul li{
     font-size: 13rem;
 }
 .hero__container h2{
-    font-weight: 200;
+    font-weight: 300;
     font-size: 2rem;
 }
 
@@ -193,6 +216,8 @@ nav ul li{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
 .module1__container .a1 { 
@@ -253,6 +278,8 @@ nav ul li{
 .location__container{
     display: flex;
     height: 100vh;
+    text-transform: uppercase;
+    letter-spacing: 0.04rem;
 }
 
 .location__container .location__left{
@@ -368,6 +395,54 @@ nav ul li{
 }
 
 
+
+
+.location__container .title1,
+.location__container .title2,
+.location__container .title3{
+    font-size: 1.2rem;
+}
+
+.location__container .location1 span,
+.location__container .location2 span,
+.location__container .location3 span{
+    font-weight: 500;
+}
+
+.location__container .location1 p,
+.location__container .location2 p,
+.location__container .location3 p{
+    text-transform: capitalize;
+}
+
+.location__container .phone1,
+.location__container .phone2,
+.location__container .phone3{
+    margin: 2rem 0;
+}
+
+.location__container .view1,
+.location__container .view2,
+.location__container .view3{
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.location__container .hours1 span,
+.location__container .hours2 span,
+.location__container .hours3 span{
+    font-weight: 600;
+}
+
+.location__container .hours1 p,
+.location__container .hours2 p,
+.location__container .hours3 p{
+    text-transform: capitalize;
+    margin: 1rem 0;
+}
+
+
 /* ========================== Commitments ========================== */
 
 .commitments__container{
@@ -375,6 +450,8 @@ nav ul li{
     background-color: #F3ECE2;
 
     display: flex;
+    letter-spacing: 0.05rem;
+    font-weight: 400;
 }
 
 .commitments__container .commitments__left{
@@ -386,6 +463,16 @@ nav ul li{
     justify-content: center;
 }
 
+.commitments__container .commitments__left h4{
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.commitments__container .commitments__left p{
+    margin: 2rem 0;
+}
+
 .commitments__container .commitments__right{
     width: 50%;
     padding: 10%;
@@ -395,9 +482,27 @@ nav ul li{
     justify-content: center;
 }
 
-.commitments__right--line{
-    color: #DED9C6;
+.commitments__container .commitments__right h5{
+    padding: 1rem 0;
+
+    text-transform: uppercase;
+    font-size: 1.5rem;
 }
+
+.commitments__container .commitments__right h5 span{
+    color: #A3A08E;
+    font-family: 'Camaroon', sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+
+    margin-right: 2rem;
+}
+
+.commitments__container .commitments__right h5:nth-child(1),
+.commitments__container .commitments__right h5:nth-child(2){
+    border-bottom: 1px solid #DED9C6;
+}
+
 
 
 
@@ -411,6 +516,7 @@ nav ul li{
         "c1 c1 c2 c3"
         "d1 d2 d3 d3"
     ; 
+    text-transform: uppercase;
 }
 
 .module2__container .module__product{
@@ -438,8 +544,20 @@ nav ul li{
 
 .module2__container .module__quote{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.module2__container .module__quote h4{
+    font-weight: 400;
+    font-family: 'Camaroon', sans-serif;
+    font-size: 4rem;
+    
+    margin-bottom: 3rem;
+
 }
 
 .module2__container .c1 { 
@@ -490,8 +608,8 @@ nav ul li{
 }
 
 .discount__container h3{
-    font-size: 4rem;
-    font-weight: 200;
+    font-size: 3rem;
+    font-weight: 400;
 }
 
 
